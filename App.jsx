@@ -3,7 +3,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import UseStateHook from './src/components/UseStateHook';
+import Props from './src/components/Props';
+// import UseStateHook from './src/components/UseStateHook';
 // import OnPress from './src/components/OnPress';
 // import First from './src/components/First';
 // import JSX from './src/components/JSX';
@@ -19,7 +20,8 @@ const App = () => {
       <First /> */}
       {/* <JSX /> */}
       {/* <OnPress /> */}
-      <UseStateHook />
+      {/* <UseStateHook /> */}
+      <Props />
     </View>
   );
 };
