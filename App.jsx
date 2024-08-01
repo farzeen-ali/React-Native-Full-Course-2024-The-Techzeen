@@ -3,7 +3,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import Props from './src/components/Props';
+import InputText from './src/components/InputText';
+// import Props from './src/components/Props';
 // import UseStateHook from './src/components/UseStateHook';
 // import OnPress from './src/components/OnPress';
 // import First from './src/components/First';
@@ -21,7 +22,8 @@ const App = () => {
       {/* <JSX /> */}
       {/* <OnPress /> */}
       {/* <UseStateHook /> */}
-      <Props />
+      {/* <Props /> */}
+      <InputText />
     </View>
   );
 };
