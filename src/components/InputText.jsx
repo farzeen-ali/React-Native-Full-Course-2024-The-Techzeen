@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-/* eslint-disable react-native/no-inline-styles */
+/* eslint-disable react-native/no-inline-styles  */
 
 import { View, Text, TextInput, Button } from 'react-native';
 import React, { useState } from 'react';
