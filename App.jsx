@@ -3,7 +3,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import FlatListScreen from './src/components/FlatListScreen';
+import SectionListScreen from './src/components/SectionListScreen';
+// import FlatListScreen from './src/components/FlatListScreen';
 // import Styling from './src/components/Styling';
 // import InputText from './src/components/InputText';
 // import Props from './src/components/Props';
@@ -27,7 +28,8 @@ const App = () => {
       {/* <Props /> */}
       {/* <InputText /> */}
       {/* <Styling /> */}
-      <FlatListScreen />
+      {/* <FlatListScreen /> */}
+      <SectionListScreen />
     </View>
   );
 };
