@@ -3,7 +3,9 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import LoginForm from './src/components/LoginForm';
+import ContactListScreen from './src/screens/Contact/ContactListScreen';
+// import LoginForm from './src/components/LoginForm';
+// import UserListScreen from './src/components/LoopList';
 // import SectionListScreen from './src/components/SectionListScreen';
 // import FlatListScreen from './src/components/FlatListScreen';
 // import Styling from './src/components/Styling';
@@ -31,7 +33,8 @@ const App = () => {
       {/* <Styling /> */}
       {/* <FlatListScreen /> */}
       {/* <SectionListScreen /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
+      <ContactListScreen />
     </View>
   );
 };
