@@ -1,9 +1,11 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-native/no-inline-styles */
 
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import ContactListScreen from './src/screens/Contact/ContactListScreen';
+import Grid from './src/components/Grid';
+// import ContactListScreen from './src/screens/Contact/ContactListScreen';
 // import LoginForm from './src/components/LoginForm';
 // import UserListScreen from './src/components/LoopList';
 // import SectionListScreen from './src/components/SectionListScreen';
@@ -17,7 +19,7 @@ import ContactListScreen from './src/screens/Contact/ContactListScreen';
 // import JSX from './src/components/JSX';
 const App = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       {/* <Text style={ { fontSize : 30 } }>React Native Mobile APP Developer</Text>
       <Text style={ { fontSize : 30 } }>Farzeen Ali</Text>
       <Button title="Press Here" />
@@ -34,7 +36,8 @@ const App = () => {
       {/* <FlatListScreen /> */}
       {/* <SectionListScreen /> */}
       {/* <LoginForm /> */}
-      <ContactListScreen />
+      {/* <ContactListScreen /> */}
+      <Grid />
     </View>
   );
 };
