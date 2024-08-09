@@ -4,7 +4,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import Grid from './src/components/Grid';
+import ClassComponents from './src/components/ClassComponents';
+// import Grid from './src/components/Grid';
 // import ContactListScreen from './src/screens/Contact/ContactListScreen';
 // import LoginForm from './src/components/LoginForm';
 // import UserListScreen from './src/components/LoopList';
@@ -37,7 +38,8 @@ const App = () => {
       {/* <SectionListScreen /> */}
       {/* <LoginForm /> */}
       {/* <ContactListScreen /> */}
-      <Grid />
+      {/* <Grid /> */}
+      <ClassComponents />
     </View>
   );
 };
