@@ -4,7 +4,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import UseEffectHook from './src/components/UseEffectHook';
+// import UseEffectHook from './src/components/UseEffectHook';
+import UseEffectHookUpdatingPhase from './src/components/UseEffectHookUpdatingPhase';
 // import ClassComponents from './src/components/ClassComponents';
 // import Grid from './src/components/Grid';
 // import ContactListScreen from './src/screens/Contact/ContactListScreen';
@@ -41,7 +42,8 @@ const App = () => {
       {/* <ContactListScreen /> */}
       {/* <Grid /> */}
       {/* <ClassComponents /> */}
-      <UseEffectHook />
+      {/* <UseEffectHook /> */}
+      <UseEffectHookUpdatingPhase />
     </View>
   );
 };
