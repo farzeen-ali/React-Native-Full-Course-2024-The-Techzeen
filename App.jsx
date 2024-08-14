@@ -4,8 +4,9 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
+import UseEffectHookUnmountingPhase from './src/components/UseEffectHookUnmountingPhase';
 // import UseEffectHook from './src/components/UseEffectHook';
-import UseEffectHookUpdatingPhase from './src/components/UseEffectHookUpdatingPhase';
+// import UseEffectHookUpdatingPhase from './src/components/UseEffectHookUpdatingPhase';
 // import ClassComponents from './src/components/ClassComponents';
 // import Grid from './src/components/Grid';
 // import ContactListScreen from './src/screens/Contact/ContactListScreen';
@@ -43,7 +44,8 @@ const App = () => {
       {/* <Grid /> */}
       {/* <ClassComponents /> */}
       {/* <UseEffectHook /> */}
-      <UseEffectHookUpdatingPhase />
+      {/* <UseEffectHookUpdatingPhase /> */}
+      <UseEffectHookUnmountingPhase />
     </View>
   );
 };
