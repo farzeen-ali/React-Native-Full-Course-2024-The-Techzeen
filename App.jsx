@@ -4,7 +4,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import HideShowToggle from './src/components/HideShowToggle';
+import StyleWithButton from './src/components/StyleWithButton';
+// import HideShowToggle from './src/components/HideShowToggle';
 // import UseEffectHookUnmountingPhase from './src/components/UseEffectHookUnmountingPhase';
 // import UseEffectHook from './src/components/UseEffectHook';
 // import UseEffectHookUpdatingPhase from './src/components/UseEffectHookUpdatingPhase';
@@ -47,7 +48,8 @@ const App = () => {
       {/* <UseEffectHook /> */}
       {/* <UseEffectHookUpdatingPhase /> */}
       {/* <UseEffectHookUnmountingPhase /> */}
-      <HideShowToggle />
+      {/* <HideShowToggle /> */}
+      <StyleWithButton />
     </View>
   );
 };
