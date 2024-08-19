@@ -19,11 +19,11 @@ const PressableComponent = () => {
     <View style={styles.container}>
       <Pressable
       style={styles.button}
-    onPress={handlePress}
-    onPressIn={handlePressIn}
-    onPressOut={handlePressOut}
-    onLongPress={handleLongPress}
-    delayLongPress={5000}
+      onPress={handlePress}
+      onPressIn={handlePressIn}
+      onPressOut={handlePressOut}
+      onLongPress={handleLongPress}
+      delayLongPress={5000}
       >
         <Text style={styles.buttonText}>Press Me</Text>
       </Pressable>

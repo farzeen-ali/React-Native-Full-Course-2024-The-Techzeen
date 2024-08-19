@@ -4,7 +4,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import PressableComponent from './src/components/PressableComponent';
+import StatusBarExample from './src/components/StatusBarExample';
+// import PressableComponent from './src/components/PressableComponent';
 // import Loader from './src/components/Loader';
 // import StyleWithButton from './src/components/StyleWithButton';
 // import HideShowToggle from './src/components/HideShowToggle';
@@ -53,7 +54,8 @@ const App = () => {
       {/* <HideShowToggle /> */}
       {/* <StyleWithButton /> */}
       {/* <Loader /> */}
-      <PressableComponent />
+      {/* <PressableComponent /> */}
+      <StatusBarExample />
     </View>
   );
 };
