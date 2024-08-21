@@ -4,7 +4,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import UseRefHook from './src/components/UseRefHook';
+import ModalDialogBox from './src/components/ModalDialogBox';
+// import UseRefHook from './src/components/UseRefHook';
 // import StatusBarExample from './src/components/StatusBarExample';
 // import PressableComponent from './src/components/PressableComponent';
 // import Loader from './src/components/Loader';
@@ -57,7 +58,8 @@ const App = () => {
       {/* <Loader /> */}
       {/* <PressableComponent /> */}
       {/* <StatusBarExample /> */}
-      <UseRefHook />
+      {/* <UseRefHook /> */}
+      <ModalDialogBox />
     </View>
   );
 };
