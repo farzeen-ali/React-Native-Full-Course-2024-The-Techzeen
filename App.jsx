@@ -5,12 +5,11 @@ import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
 // import AlertExample from './src/components/AlertExample';
-// import API from './src/components/API';
 // import ModalDialogBox from './src/components/ModalDialogBox';
 // import UseRefHook from './src/components/UseRefHook';
 // import StatusBarExample from './src/components/StatusBarExample';
 // import PressableComponent from './src/components/PressableComponent';
-import Loader from './src/components/Loader';
+// import Loader from './src/components/Loader';
 // import StyleWithButton from './src/components/StyleWithButton';
 // import HideShowToggle from './src/components/HideShowToggle';
 // import UseEffectHookUnmountingPhase from './src/components/UseEffectHookUnmountingPhase';
@@ -57,12 +56,11 @@ const App = () => {
       {/* <UseEffectHookUnmountingPhase /> */}
       {/* <HideShowToggle /> */}
       {/* <StyleWithButton /> */}
-      <Loader />
+      {/* <Loader /> */}
       {/* <PressableComponent /> */}
       {/* <StatusBarExample /> */}
       {/* <UseRefHook /> */}
       {/* <ModalDialogBox /> */}
-      {/* <API /> */}
     </View>
   );
 };
