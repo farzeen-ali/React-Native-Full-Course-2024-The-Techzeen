@@ -4,6 +4,7 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
+import GET_API from './src/components/GET_API';
 // import AlertExample from './src/components/AlertExample';
 // import ModalDialogBox from './src/components/ModalDialogBox';
 // import UseRefHook from './src/components/UseRefHook';
@@ -61,6 +62,8 @@ const App = () => {
       {/* <StatusBarExample /> */}
       {/* <UseRefHook /> */}
       {/* <ModalDialogBox /> */}
+      {/* <AlertExample /> */}
+      <GET_API />
     </View>
   );
 };
