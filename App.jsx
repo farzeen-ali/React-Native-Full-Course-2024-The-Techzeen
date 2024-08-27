@@ -4,7 +4,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import POST_API from './src/components/POST_API';
+// import POST_API from './src/components/POST_API';
+import PUT_API from './src/components/PUT_API';
 // import GET_API from './src/components/GET_API';
 // import AlertExample from './src/components/AlertExample';
 // import ModalDialogBox from './src/components/ModalDialogBox';
@@ -65,7 +66,8 @@ const App = () => {
       {/* <ModalDialogBox /> */}
       {/* <AlertExample /> */}
       {/* <GET_API /> */}
-      <POST_API />
+      {/* <POST_API /> */}
+      <PUT_API />
     </View>
   );
 };
