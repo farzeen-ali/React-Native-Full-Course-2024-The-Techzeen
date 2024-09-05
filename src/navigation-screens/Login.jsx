@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, TextInput, Button } from 'react-native';
 import React, { useState } from 'react';
 
 const Login = ({ navigation }) => {
