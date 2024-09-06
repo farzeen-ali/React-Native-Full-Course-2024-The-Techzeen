@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { View, Text } from 'react-native';
+import { View, Text, Button } from 'react-native';
 import React from 'react';
 
 const About = (props) => {
@@ -10,6 +10,7 @@ const About = (props) => {
     <View>
       {/* <Text>{username} {age} </Text> */}
       <Text>Welcome {username} </Text>
+      <Button title="Go Back" onPress={() => props.navigation.goBack()} />
     </View>
   );
 };

@@ -6,9 +6,19 @@ import React from 'react';
 import Home from './src/navigation-screens/Home';
 import About from './src/navigation-screens/About';
 import Login from './src/navigation-screens/Login';
-import { StyleSheet } from 'react-native';
+import { Alert, Button, StyleSheet } from 'react-native';
+import MyHeader from './src/navigation-screens/MyHeader';
+import Example from './src/navigation-screens/Example';
 
 const Stack = createNativeStackNavigator();
+
+// const sayHello = () => {
+//   Alert.alert('Hello', 'Hello User');
+// };
+
+// const HeaderTitle = () => <Button title="One" color="red" onPress={sayHello} />;
+// const HeaderRight = () => <Button title="Two" color="green" onPress={sayHello} />;
+const MyExample = () => <Example />;
 
 const App = () => {
   return (
@@ -21,6 +31,16 @@ const App = () => {
           contentStyle: styles.screen,
         }}
       >
+        <Stack.Screen name="Header" component={MyHeader}
+        options={{
+          title: '',
+          // headerTitle: () => <Button title="One" color="red" />,
+          // headerRight: () => <Button title="Two" color="green"  />
+          // headerTitle: HeaderTitle,
+          // headerRight: HeaderRight,
+          headerTitle: MyExample,
+        }}
+        />
         <Stack.Screen name="Login" component={Login}
           // options={{
           //   title: 'My Login Form',
