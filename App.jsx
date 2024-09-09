@@ -1,55 +1,60 @@
 /* eslint-disable prettier/prettier */
 import 'react-native-gesture-handler';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Icon from 'react-native-vector-icons/Ionicons';
+const Tab = createBottomTabNavigator();
 
-const Drawer = createDrawerNavigator();
+const getTabBarIcon = (routeName, focused, color, size) => {
+  let iconName;
+  if(routeName === 'Home'){
+    iconName = focused ? 'home' : 'home-outline';
+  }
+  else if(routeName === 'Profile'){
+    iconName = focused ? 'person' : 'person-outline';
+  }
+  else if(routeName === 'Settings'){
+    iconName = focused ? 'settings' : 'settings-outline';
+  }
+  return <Icon name={iconName} size={size} color={color} />;
+};
 
-const HomeScreen = ({ navigation }) => (
-  <View style={styles.screenContainer}>
-    <Text style={styles.title}>Home Screen</Text>
-    <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
+const HomeScreen = () => (
+  <View style={styles.container}>
+    <Text style={styles.text}>Home Screen</Text>
   </View>
 );
-const ProfileScreen = ({ navigation }) => (
-  <View style={styles.screenContainer}>
-    <Text style={styles.title}>Profile Screen</Text>
-    <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
+const ProfileScreen = () => (
+  <View style={styles.container}>
+    <Text style={styles.text}>Profile Screen</Text>
   </View>
 );
-const SettingScreen = ({ navigation }) => (
-  <View style={styles.screenContainer}>
-    <Text style={styles.title}>Setting Screen</Text>
-    <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
+const SettingScreen = () => (
+  <View style={styles.container}>
+    <Text style={styles.text}>Setting Screen</Text>
   </View>
 );
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Drawer.Navigator
-      screenOptions={{
-        drawerStyle: {
-          backgroundColor: '#e6e6e6',
-          width: 240,
+      <Tab.Navigator
+      screenOptions={({ route }) => ({
+        tabBarIcon: ({ focused , color, size}) => getTabBarIcon(route.name, focused, color, size),
+        tabBarActiveTintColor: '#007bff',
+        tabBarInactiveTintColor: 'gray',
+        tabBarStyle: {
+          paddingBottom: 5,
+          height: 60,
         },
-        drawerLabelStyle: {
-          fontSize: 18,
-          color: '#333',
-        },
-        headerStyle: {
-          backgroundColor: '#6200EE',
-        },
-        headerTintColor: '#fff',
-        headerTitleAlign: 'center',
-      }}
+      })}
       >
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Profile" component={ProfileScreen} />
-        <Drawer.Screen name="Settings" component={SettingScreen} />
-      </Drawer.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="Settings" component={SettingScreen} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 };
@@ -57,16 +62,16 @@ const App = () => {
 export default App;
 
 const styles = StyleSheet.create({
-  screenContainer: {
+  container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#f8f9fa',
   },
-  title: {
-    fontSize: 22,
-    fontWeight:'bold',
-    marginBottom: 20,
+  text: {
+    fontSize: 26,
+    fontWeight: 'bold',
+    color: '#343a40',
   },
 });
 
@@ -92,12 +97,77 @@ const styles = StyleSheet.create({
 
 
 
+// *********** Drawer Navigation ********************
+// import 'react-native-gesture-handler';
+// import { View, Text, Button, StyleSheet } from 'react-native';
+// import React from 'react';
+// import { createDrawerNavigator } from '@react-navigation/drawer';
+// import { NavigationContainer } from '@react-navigation/native';
 
+// const Drawer = createDrawerNavigator();
 
+// const HomeScreen = ({ navigation }) => (
+//   <View style={styles.screenContainer}>
+//     <Text style={styles.title}>Home Screen</Text>
+//     <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
+//   </View>
+// );
+// const ProfileScreen = ({ navigation }) => (
+//   <View style={styles.screenContainer}>
+//     <Text style={styles.title}>Profile Screen</Text>
+//     <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
+//   </View>
+// );
+// const SettingScreen = ({ navigation }) => (
+//   <View style={styles.screenContainer}>
+//     <Text style={styles.title}>Setting Screen</Text>
+//     <Button title="Open Drawer" onPress={() => navigation.openDrawer()} />
+//   </View>
+// );
 
+// const App = () => {
+//   return (
+//     <NavigationContainer>
+//       <Drawer.Navigator
+//       screenOptions={{
+//         drawerStyle: {
+//           backgroundColor: '#e6e6e6',
+//           width: 240,
+//         },
+//         drawerLabelStyle: {
+//           fontSize: 18,
+//           color: '#333',
+//         },
+//         headerStyle: {
+//           backgroundColor: '#6200EE',
+//         },
+//         headerTintColor: '#fff',
+//         headerTitleAlign: 'center',
+//       }}
+//       >
+//         <Drawer.Screen name="Home" component={HomeScreen} />
+//         <Drawer.Screen name="Profile" component={ProfileScreen} />
+//         <Drawer.Screen name="Settings" component={SettingScreen} />
+//       </Drawer.Navigator>
+//     </NavigationContainer>
+//   );
+// };
 
+// export default App;
 
-
+// const styles = StyleSheet.create({
+//   screenContainer: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#f0f0f0',
+//   },
+//   title: {
+//     fontSize: 22,
+//     fontWeight:'bold',
+//     marginBottom: 20,
+//   },
+// });
 
 
 // ************ Stack Navigation *****************
