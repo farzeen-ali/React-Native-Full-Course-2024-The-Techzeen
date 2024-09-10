@@ -1,61 +1,49 @@
 /* eslint-disable prettier/prettier */
 import 'react-native-gesture-handler';
+
 import { View, Text, StyleSheet } from 'react-native';
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Icon from 'react-native-vector-icons/Ionicons';
-const Tab = createBottomTabNavigator();
+import {NavigationContainer} from '@react-navigation/native';
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
-const getTabBarIcon = (routeName, focused, color, size) => {
-  let iconName;
-  if(routeName === 'Home'){
-    iconName = focused ? 'home' : 'home-outline';
-  }
-  else if(routeName === 'Profile'){
-    iconName = focused ? 'person' : 'person-outline';
-  }
-  else if(routeName === 'Settings'){
-    iconName = focused ? 'settings' : 'settings-outline';
-  }
-  return <Icon name={iconName} size={size} color={color} />;
-};
+const Tab = createMaterialTopTabNavigator();
 
-const HomeScreen = () => (
+const ChatScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.text}>Home Screen</Text>
+    <Text style={styles.text}>Chats</Text>
   </View>
 );
-const ProfileScreen = () => (
+const StatusScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.text}>Profile Screen</Text>
+    <Text style={styles.text}>Status</Text>
   </View>
 );
-const SettingScreen = () => (
+const CallsScreen = () => (
   <View style={styles.container}>
-    <Text style={styles.text}>Setting Screen</Text>
+    <Text style={styles.text}>Calls</Text>
   </View>
 );
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-      screenOptions={({ route }) => ({
-        tabBarIcon: ({ focused , color, size}) => getTabBarIcon(route.name, focused, color, size),
-        tabBarActiveTintColor: '#007bff',
-        tabBarInactiveTintColor: 'gray',
-        tabBarStyle: {
-          paddingBottom: 5,
-          height: 60,
-        },
-      })}
-      >
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
-        <Tab.Screen name="Settings" component={SettingScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+  <NavigationContainer>
+    <Tab.Navigator
+    screenOptions={{
+      tabBarActiveTintColor: '#007bff',
+      tabBarInactiveTintColor: 'gray',
+      tabBarStyle: { backgroundColor: '#fff' },
+      tabBarIndicatorStyle: {
+        backgroundColor: '#007bff',
+        height: 3,
+      },
+      tabBarLabelStyle: { fontSize: 16 },
+    }}
+    >
+      <Tab.Screen name="Chats" component={ChatScreen} />
+      <Tab.Screen name="Status" component={StatusScreen} />
+      <Tab.Screen name="Calls" component={CallsScreen} />
+    </Tab.Navigator>
+  </NavigationContainer>
   );
 };
 
@@ -66,33 +54,92 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f8f9fa',
+    backgroundColor: '#f0f2f5',
   },
   text: {
-    fontSize: 26,
-    fontWeight: 'bold',
-    color: '#343a40',
+    fontSize: 20,
   },
 });
 
 
 
 
+// ******** Bottom Tab Navigation *****************
+// import 'react-native-gesture-handler';
+// import { View, Text, StyleSheet } from 'react-native';
+// import React from 'react';
+// import { NavigationContainer } from '@react-navigation/native';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import Icon from 'react-native-vector-icons/Ionicons';
+// const Tab = createBottomTabNavigator();
 
+// const getTabBarIcon = (routeName, focused, color, size) => {
+//   let iconName;
+//   if(routeName === 'Home'){
+//     iconName = focused ? 'home' : 'home-outline';
+//   }
+//   else if(routeName === 'Profile'){
+//     iconName = focused ? 'person' : 'person-outline';
+//   }
+//   else if(routeName === 'Settings'){
+//     iconName = focused ? 'settings' : 'settings-outline';
+//   }
+//   return <Icon name={iconName} size={size} color={color} />;
+// };
 
+// const HomeScreen = () => (
+//   <View style={styles.container}>
+//     <Text style={styles.text}>Home Screen</Text>
+//   </View>
+// );
+// const ProfileScreen = () => (
+//   <View style={styles.container}>
+//     <Text style={styles.text}>Profile Screen</Text>
+//   </View>
+// );
+// const SettingScreen = () => (
+//   <View style={styles.container}>
+//     <Text style={styles.text}>Setting Screen</Text>
+//   </View>
+// );
 
+// const App = () => {
+//   return (
+//     <NavigationContainer>
+//       <Tab.Navigator
+//       screenOptions={({ route }) => ({
+//         tabBarIcon: ({ focused , color, size}) => getTabBarIcon(route.name, focused, color, size),
+//         tabBarActiveTintColor: '#007bff',
+//         tabBarInactiveTintColor: 'gray',
+//         tabBarStyle: {
+//           paddingBottom: 5,
+//           height: 60,
+//         },
+//       })}
+//       >
+//         <Tab.Screen name="Home" component={HomeScreen} />
+//         <Tab.Screen name="Profile" component={ProfileScreen} />
+//         <Tab.Screen name="Settings" component={SettingScreen} />
+//       </Tab.Navigator>
+//     </NavigationContainer>
+//   );
+// };
 
+// export default App;
 
-
-
-
-
-
-
-
-
-
-
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//     backgroundColor: '#f8f9fa',
+//   },
+//   text: {
+//     fontSize: 26,
+//     fontWeight: 'bold',
+//     color: '#343a40',
+//   },
+// });
 
 
 
