@@ -4,7 +4,8 @@
 import React from 'react';
 // import { Button, Text, View } from 'react-native';
 import { View } from 'react-native';
-import Search from './src/components/Search';
+// import Search from './src/components/Search';
+import AsyncStorageExample from './src/components/AsyncStorageExample';
 // import PlatformExample from './src/components/PlatformExample';
 // import GET_API_LIST from './src/components/GET_API_LIST';
 // import DELETE_API from './src/components/DELETE_API';
@@ -77,7 +78,8 @@ const App = () => {
       {/* <DELETE_API /> */}
       {/* <GET_API_LIST /> */}
       {/* <PlatformExample /> */}
-      <Search />
+      {/* <Search /> */}
+      <AsyncStorageExample />
     </View>
   );
 };
