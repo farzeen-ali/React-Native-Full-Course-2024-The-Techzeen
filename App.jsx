@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
-/* eslint-disable react-native/no-inline-styles */
+// /* eslint-disable react-native/no-inline-styles */
 
-import React from 'react';
+// import React from 'react';
 // import { Button, Text, View } from 'react-native';
-import { View } from 'react-native';
-import ImageComponentExample from './src/components/ImageComponentExample';
+// import { View } from 'react-native';
+// import ImageComponentExample from './src/components/ImageComponentExample';
 // import Search from './src/components/Search';
 // import AsyncStorageExample from './src/components/AsyncStorageExample';
 // import PlatformExample from './src/components/PlatformExample';
@@ -39,52 +39,52 @@ import ImageComponentExample from './src/components/ImageComponentExample';
 // import OnPress from './src/components/OnPress';
 // import First from './src/components/First';
 // import JSX from './src/components/JSX';
-const App = () => {
-  return (
-    <View style={{ flex: 1 }}>
-      {/* <Text style={ { fontSize : 30 } }>React Native Mobile APP Developer</Text>
-      <Text style={ { fontSize : 30 } }>Farzeen Ali</Text>
-      <Button title="Press Here" />
-      <First />
-      <First />
-      <First />
-      <First /> */}
-      {/* <JSX /> */}
-      {/* <OnPress /> */}
-      {/* <UseStateHook /> */}
-      {/* <Props /> */}
-      {/* <InputText /> */}
-      {/* <Styling /> */}
-      {/* <FlatListScreen /> */}
-      {/* <SectionListScreen /> */}
-      {/* <LoginForm /> */}
-      {/* <ContactListScreen /> */}
-      {/* <Grid /> */}
-      {/* <ClassComponents /> */}
-      {/* <UseEffectHook /> */}
-      {/* <UseEffectHookUpdatingPhase /> */}
-      {/* <UseEffectHookUnmountingPhase /> */}
-      {/* <HideShowToggle /> */}
-      {/* <StyleWithButton /> */}
-      {/* <Loader /> */}
-      {/* <PressableComponent /> */}
-      {/* <StatusBarExample /> */}
-      {/* <UseRefHook /> */}
-      {/* <ModalDialogBox /> */}
-      {/* <AlertExample /> */}
-      {/* <GET_API /> */}
-      {/* <POST_API /> */}
-      {/* <PUT_API /> */}
-      {/* <PATCH_API /> */}
-      {/* <DELETE_API /> */}
-      {/* <GET_API_LIST /> */}
-      {/* <PlatformExample /> */}
-      {/* <Search /> */}
-      {/* <AsyncStorageExample /> */}
-      <ImageComponentExample />
-    </View>
-  );
-};
+// const App = () => {
+//   return (
+//     <View style={{ flex: 1 }}>
+//       {/* <Text style={ { fontSize : 30 } }>React Native Mobile APP Developer</Text>
+//       <Text style={ { fontSize : 30 } }>Farzeen Ali</Text>
+//       <Button title="Press Here" />
+//       <First />
+//       <First />
+//       <First />
+//       <First /> */}
+//       {/* <JSX /> */}
+//       {/* <OnPress /> */}
+//       {/* <UseStateHook /> */}
+//       {/* <Props /> */}
+//       {/* <InputText /> */}
+//       {/* <Styling /> */}
+//       {/* <FlatListScreen /> */}
+//       {/* <SectionListScreen /> */}
+//       {/* <LoginForm /> */}
+//       {/* <ContactListScreen /> */}
+//       {/* <Grid /> */}
+//       {/* <ClassComponents /> */}
+//       {/* <UseEffectHook /> */}
+//       {/* <UseEffectHookUpdatingPhase /> */}
+//       {/* <UseEffectHookUnmountingPhase /> */}
+//       {/* <HideShowToggle /> */}
+//       {/* <StyleWithButton /> */}
+//       {/* <Loader /> */}
+//       {/* <PressableComponent /> */}
+//       {/* <StatusBarExample /> */}
+//       {/* <UseRefHook /> */}
+//       {/* <ModalDialogBox /> */}
+//       {/* <AlertExample /> */}
+//       {/* <GET_API /> */}
+//       {/* <POST_API /> */}
+//       {/* <PUT_API /> */}
+//       {/* <PATCH_API /> */}
+//       {/* <DELETE_API /> */}
+//       {/* <GET_API_LIST /> */}
+//       {/* <PlatformExample /> */}
+//       {/* <Search /> */}
+//       {/* <AsyncStorageExample /> */}
+//       <ImageComponentExample />
+//     </View>
+//   );
+// };
 
 
 // const First = () => {
@@ -96,4 +96,4 @@ const App = () => {
 // };
 
 
-export default App;
+// export default App;
