@@ -134,16 +134,33 @@
 // export default App;
 
 
+// // zustand --> A State Management Library for React Apps
+// import React from 'react';
+// import { View } from 'react-native';
+// import One from './src/components/One';
+
+// const App = () => {
+//   return (
+//     <View style={{ flex: 1 }}>
+//        <One />
+//     </View>
+//   );
+// };
+
+// export default App;
+
+
+
 
 import React from 'react';
-import { View } from 'react-native';
-import One from './src/components/One';
+import { SafeAreaView } from 'react-native';
+import MyLogin from './src/components/MyLogin';
 
 const App = () => {
-  return (
-    <View style={{ flex: 1 }}>
-       <One />
-    </View>
+  return(
+    <SafeAreaView className="flex-1">
+      <MyLogin />
+    </SafeAreaView>
   );
 };
 
