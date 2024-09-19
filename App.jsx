@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-/* eslint-disable react-native/no-inline-styles */
+// /* eslint-disable react-native/no-inline-styles */
 
 // import React from 'react';
 // import { Button, Text, View } from 'react-native';
@@ -167,8 +167,6 @@
 // export default App;
 
 
-
-
 // Reanimated React Native
 import React from 'react';
 import { View } from 'react-native';
@@ -183,4 +181,3 @@ const App = () => {
 };
 
 export default App;
-
