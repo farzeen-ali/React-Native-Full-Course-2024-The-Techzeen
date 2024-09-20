@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "739120515935",
+    "project_id": "rnfirebase-3b483",
+    "storage_bucket": "rnfirebase-3b483.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:739120515935:android:2db1afd7ffd67d429f84ea",
+        "android_client_info": {
+          "package_name": "com.reactnativetutorial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEXcYviNISIKfp5O3r1gi842RXHOG7Oss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

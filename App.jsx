@@ -168,16 +168,32 @@
 
 
 // Reanimated React Native
+// import React from 'react';
+// import { View } from 'react-native';
+// import AnimatedCardFlip from './src/components/AnimatedCardFlip';
+
+// const App = () => {
+//   return (
+//     <View className="flex-1">
+//       <AnimatedCardFlip />
+//     </View>
+//   );
+// };
+
+// export default App;
+
+// Firebase
+
+import { View, Text } from 'react-native';
 import React from 'react';
-import { View } from 'react-native';
-import AnimatedCardFlip from './src/components/AnimatedCardFlip';
 
 const App = () => {
   return (
     <View className="flex-1">
-      <AnimatedCardFlip />
+      <Text className="text-center text-6xl">Firebase with React Native</Text>
     </View>
   );
 };
 
 export default App;
+
