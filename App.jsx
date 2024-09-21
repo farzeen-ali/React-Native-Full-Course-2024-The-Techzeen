@@ -184,16 +184,16 @@
 
 // Firebase
 
-import { View, Text } from 'react-native';
-import React from 'react';
+// import { View, Text } from 'react-native';
+// import React from 'react';
 
-const App = () => {
-  return (
-    <View className="flex-1">
-      <Text className="text-center text-6xl">Firebase with React Native</Text>
-    </View>
-  );
-};
+// const App = () => {
+//   return (
+//     <View className="flex-1">
+//       <Text className="text-center text-6xl">Firebase with React Native</Text>
+//     </View>
+//   );
+// };
 
-export default App;
+// export default App;
 
