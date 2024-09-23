@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+// /* eslint-disable prettier/prettier */
 import auth from '@react-native-firebase/auth';
 
 export const registerUser = async (email, password) => {
@@ -21,6 +22,27 @@ export const registerUser = async (email, password) => {
             default:
                 errorMessage = 'An unknown error occured';
                 break;
+        }
+        throw new Error(errorMessage);
+    }
+};
+
+export const loginUser = async (email, password) => {
+    try {
+        const userCredential = await auth().signInWithEmailAndPassword(email,password);
+        const user = userCredential.user;
+        return {user, emailVerified: user.emailVerified};
+    } catch (error) {
+        let errorMessage;
+        switch (error.code) {
+            case 'auth/wrong-password':
+                errorMessage = 'Incorrect Password';
+                break;
+            case 'auth/user-not-found':
+                errorMessage = 'No user found!';
+                break;
+            default:
+                errorMessage = 'An unknown error occurred';
         }
         throw new Error(errorMessage);
     }

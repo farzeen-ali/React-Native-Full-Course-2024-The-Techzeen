@@ -201,12 +201,14 @@
 // Firebase Authentication
 import { View } from 'react-native';
 import React from 'react';
-import Register from './src/components/Register';
+import Login from './src/components/Login';
+// import Register from './src/components/Register';
 
 const App = () => {
   return (
     <View className="flex-1">
-      <Register />
+      {/* <Register /> */}
+      <Login />
     </View>
   );
 };

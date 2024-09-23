@@ -8,6 +8,10 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const handleRegister = async () => {
+        if(!email || !password || !confirmPassword){
+            Alert.alert('Error', 'Please Fill all fields');
+            return;
+        }
         if(password !== confirmPassword){
             Alert.alert('Error', 'Passwords do not match');
             return;
