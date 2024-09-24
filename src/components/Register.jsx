@@ -3,7 +3,7 @@ import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
 import React, { useState } from 'react';
 import { registerUser } from '../services/auth';
 
-const Register = () => {
+const Register = ({navigation}) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -55,6 +55,9 @@ const Register = () => {
         <TouchableOpacity className="bg-pink-600 p-4 rounded-lg" onPress={handleRegister}>
             <Text className="text-white text-center font-semibold text-lg">Register</Text>
         </TouchableOpacity>
+        <TouchableOpacity className="mt-4"  onPress={() => navigation.navigate('Login')}>
+                <Text className="text-center text-pink-600">Login?</Text>
+            </TouchableOpacity>
       </View>
     </View>
   );

@@ -47,3 +47,22 @@ export const loginUser = async (email, password) => {
         throw new Error(errorMessage);
     }
 };
+
+export const sendPasswordResetEmail = async (email) => {
+    try {
+        await auth().sendPasswordResetEmail(email);
+    } catch (error) {
+        let errorMessage;
+        switch (error.code) {
+            case 'auth/user-not-found':
+                errorMessage = 'This user does not exist';
+                break;
+            case 'auth/invalid-email':
+                errorMessage = 'Invalid Email address';
+                break;
+            default:
+                errorMessage = 'An knowon error occurred';
+        }
+        throw new Error(errorMessage);
+    }
+};
