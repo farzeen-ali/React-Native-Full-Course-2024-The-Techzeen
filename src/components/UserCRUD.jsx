@@ -2,7 +2,8 @@
 /* eslint-disable react-native/no-inline-styles */
 import { View, Text, Alert, TextInput, TouchableOpacity, FlatList } from 'react-native';
 import React, { useEffect, useState } from 'react';
-import { addUserData, deleteUser, getUsers, updateUser } from '../database/firestoreCRUD';
+// import { addUserData, deleteUser, getUsers, updateUser } from '../database/firestoreCRUD';
+import { addUserData, deleteUser, getUsers, updateUser } from '../database/realtimeCRUD';
 
 const UserCRUD = () => {
     const [name, setName] = useState('');
