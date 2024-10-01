@@ -231,14 +231,30 @@
 
 // Firebase Firestore Database
 
-import { View } from 'react-native';
-import React from 'react';
-import UserCRUD from './src/components/UserCRUD';
+// import { View } from 'react-native';
+// import React from 'react';
+// import UserCRUD from './src/components/UserCRUD';
 
+// const App = () => {
+//   return (
+//     <View className="flex-1">
+//       <UserCRUD />
+//     </View>
+//   );
+// };
+
+// export default App;
+
+import { View, Text } from 'react-native';
+import React, { useEffect } from 'react';
+import SplashScreen from 'react-native-splash-screen';
 const App = () => {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return (
-    <View className="flex-1">
-      <UserCRUD />
+    <View>
+      <Text className="text-center text-3xl">Splash Screen</Text>
     </View>
   );
 };
