@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable react-native/no-inline-styles */
 // /* eslint-disable react-native/no-inline-styles */
 
 // import React from 'react';
@@ -134,20 +135,20 @@
 // export default App;
 
 
-// // zustand --> A State Management Library for React Apps
-// import React from 'react';
-// import { View } from 'react-native';
-// import One from './src/components/One';
+// zustand --> A State Management Library for React Apps
+import React from 'react';
+import { View } from 'react-native';
+import One from './src/components/One';
 
-// const App = () => {
-//   return (
-//     <View style={{ flex: 1 }}>
-//        <One />
-//     </View>
-//   );
-// };
+const App = () => {
+  return (
+    <View style={{ flex: 1 }}>
+       <One />
+    </View>
+  );
+};
 
-// export default App;
+export default App;
 
 
 
@@ -245,20 +246,20 @@
 
 // export default App;
 
-import { View } from 'react-native';
-import React, { useEffect } from 'react';
-import SplashScreen from 'react-native-splash-screen';
-import SwitchUI from './src/components/SwitchUI';
-const App = () => {
-  useEffect(() => {
-    SplashScreen.hide();
-  }, []);
-  return (
-    <View className="flex-1">
-      <SwitchUI />
-    </View>
-  );
-};
+// import { View } from 'react-native';
+// import React, { useEffect } from 'react';
+// import SplashScreen from 'react-native-splash-screen';
+// import SwitchUI from './src/components/SwitchUI';
+// const App = () => {
+//   useEffect(() => {
+//     SplashScreen.hide();
+//   }, []);
+//   return (
+//     <View className="flex-1">
+//       <SwitchUI />
+//     </View>
+//   );
+// };
 
-export default App;
+// export default App;
 
